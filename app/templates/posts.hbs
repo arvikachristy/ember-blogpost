@@ -1,2 +1,10 @@
 <h1>Here are my blog posts</h1>
+
+<ul>{{#each model as |post|}}
+	<li>{{post.title}}</li>
+	by: {{post.author}}
+	{{/each}}
+</ul>
+
+
 {{outlet}}
