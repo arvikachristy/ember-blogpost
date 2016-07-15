@@ -13,9 +13,6 @@ let posts = [{
 
 export default Ember.Route.extend({
 	model(){
-		    return Ember.RSVP.hash({
-      title: this.get('store').findAll('title')
-    });
-		// return posts;
+		return posts;
 	}
 });
