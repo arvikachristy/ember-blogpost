@@ -1,2 +1,7 @@
 <h1>Brand new post</h1>
-{{outlet}}
+
+{{#each model as |post|}}
+  {{#blog-post title=post.title}}
+    {{post.body}}
+  {{/blog-post}}
+{{/each}}

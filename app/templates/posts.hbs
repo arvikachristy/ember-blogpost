@@ -3,6 +3,8 @@
 <ul>{{#each model as |post|}}
 	<li>{{post.title}}</li>
 	by: {{post.author}}
+	{{else}}
+	Sorry, no post available :(
 	{{/each}}
 </ul>
 
