@@ -5,14 +5,12 @@ export default Ember.Route.extend({
 		  return this.store.findAll('post');
 	},
 	actions:{
-		submitPost(){
+		createContact(newTitle, newAuthor){
 			var model = this.get('model');
 			var store = this.store
 			var posting = store.createRecord('post', {
-				title: 'Hello',
-				author: 'me'
-		  		// title: model.title,
-		 	 	// author: model.author
+				title: newTitle,
+				author: newAuthor
 			});
 			posting.save();
 		}
