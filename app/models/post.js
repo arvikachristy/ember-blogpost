@@ -4,5 +4,6 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
 	title: attr(),
-	author: attr()
+	author: attr(),
+	type: attr()
 });
