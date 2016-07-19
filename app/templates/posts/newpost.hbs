@@ -5,3 +5,10 @@
     {{post.body}}
   {{/blog-post}}
 {{/each}} --}}
+	<form {{action "submitPost" on="submit"}}>
+		{{input type="text" class="form-control" placeholder="Title" value=model.title}}
+		<br>
+		{{input type="text" class="form-control" placeholder="Description" value=model.author}}
+		<br>
+		<button class="btn btn-default" type="submit"> Add me</button>
+	 </form>
