@@ -6,13 +6,12 @@ export default Ember.Route.extend({
 	},
 	actions:{
 		createPost(newTitle, newAuthor){
-			var model = this.get('model');
-			var store = this.store
+			var store = this.store;
 			var posting = store.createRecord('post', {
 				title: newTitle,
 				author: newAuthor
 			});
 			posting.save();
-		}	
+		}
 	}
 });
