@@ -7,7 +7,7 @@ export default Ember.Route.extend({
 	actions:{
 		deletePost(model){
 			return model.destroyRecord();
-		}	
+		}
 	}
 
 });
