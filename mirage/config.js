@@ -1,6 +1,7 @@
 export default function() {
   this.get('/posts');
-
+  this.post('/posts');
+  this.delete('/posts/:id');
   // this.get('/posts', function(){
   //   return {
   //     data: [{
