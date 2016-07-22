@@ -7,5 +7,4 @@
 {{/each}} --}}
 {{input placeholder="Title" value=newTitle}}
 {{input placeholder="Author" value=newAuthor}}
-<button {{action 'createPost' newTitle newAuthor}}>Create Post!</button>
-
+{{#link-to 'posts'}}<button {{action 'createPost' newTitle newAuthor}}>Create Post!</button>{{/link-to}}
