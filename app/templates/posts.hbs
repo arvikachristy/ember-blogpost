@@ -1,13 +1,5 @@
 <h1>Here are my blog posts</h1>
 
-<ul>{{#each model as |post|}}
-	<li>{{#link-to 'post' post current-when='post'}}{{post.title}}{{/link-to}}</li>
-	by: {{post.author}}
-<button {{action 'deletePost' post}}>Delete Post!</button>
-	{{else}}
-	Sorry, no post available :(
-	{{/each}}
-</ul>
-
+<h2>Posts Index!</h2>
 
 {{outlet}}
