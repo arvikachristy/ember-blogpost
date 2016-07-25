@@ -12,7 +12,9 @@ Router.map(function() {
     this.route('newpost');
   });
   
-  this.route('post', { path:'/posts/:id'});
+  this.route('post', { path:'/posts/:id'}, function() {
+    this.route('edit');
+  });
 });
 
 export default Router;

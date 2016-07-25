@@ -3,6 +3,7 @@ export default function() {
   this.post('/posts');
   this.delete('/posts/:id');
   this.get('/posts/:id');
+  this.put('/posts/:id');
   // this.get('/posts', function(){
   //   return {
   //     data: [{

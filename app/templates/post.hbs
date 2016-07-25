@@ -1,3 +1,4 @@
 <h1>{{model.title}}<h4> by {{model.author}}</h4></h1>
 <button {{action 'deletePost' model.id}}>Delete Post!</button>
+{{#link-to 'post.edit'}}<button>Edit Post!</button>{{/link-to}}
 {{outlet}}

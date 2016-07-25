@@ -1,0 +1,5 @@
+<h1>Edit my post</h1>
+
+{{input placeholder="Title" value=model.title}}
+{{input placeholder="Author" value=model.author}}
+{{#link-to 'posts'}}<button {{action 'updatePost' model.title model.author model.id}}>Edit Post!</button>{{/link-to}}
