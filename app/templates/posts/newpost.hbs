@@ -5,6 +5,6 @@
     {{post.body}}
   {{/blog-post}}
 {{/each}} --}}
-{{input placeholder="Title" value=newTitle}}
-{{input placeholder="Author" value=newAuthor}}
-{{#link-to 'posts'}}<button {{action 'createPost' newTitle newAuthor}}>Create Post!</button>{{/link-to}}
+{{input placeholder="Title" value=newTitle class="title"}}
+{{input placeholder="Author" value=newAuthor class="author"}}
+{{#link-to 'posts'}}<button {{action 'createPost' newTitle newAuthor}} class="submit">Create Post!</button>{{/link-to}}

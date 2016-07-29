@@ -1,5 +1,5 @@
 
-<ul>{{#each model as |post|}}
+<ul class="posts">{{#each model as |post|}}
 	<li>{{#link-to 'post' post current-when='post'}}{{post.title}}{{/link-to}}</li>
 	by: {{post.author}}
 	{{else}}
