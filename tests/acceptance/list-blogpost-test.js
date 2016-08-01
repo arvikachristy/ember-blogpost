@@ -21,7 +21,7 @@ test('should navigate to list of posts', function (assert) {
 test('should link to post list', function(assert) {
   visit('/posts/newpost');
   fillIn('input.title','Test my post yeah!');
-  click('button.submit');
+  click('[data-test=submit]');
   andThen(() => assert.equal(find('ul.posts li:first').text(), 'Test my post yeah!'));
   andThen(function() {
     assert.equal(currentURL(), '/posts', "should pass the post list");

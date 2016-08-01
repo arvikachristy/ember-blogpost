@@ -7,4 +7,10 @@
 {{/each}} --}}
 {{input placeholder="Title" value=newTitle class="title"}}
 {{input placeholder="Author" value=newAuthor class="author"}}
-{{#link-to 'posts'}}<button {{action 'createPost' newTitle newAuthor}} class="submit">Create Post!</button>{{/link-to}}
+{{#link-to 'posts'}}
+<button
+  data-test="submit"
+  {{action 'createPost' newTitle newAuthor}}
+  class="submit">
+  Create Post!
+</button>{{/link-to}}
